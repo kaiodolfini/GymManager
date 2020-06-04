@@ -61,15 +61,15 @@ header > .links a.active{
 .wrap > .card{
     background-color: white;
     width: 800px;
-    height: 400px;
+    min-height: 400px;
     margin: 45px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     box-shadow: 0px 2px 6px -2px rgba(0, 0, 0, 0.4);
+    /* --------- ANIMAÇÃO --------- */
     animation: up 200ms ease-out;
 }
 
-/* --------- ANIMAÇÃO --------- */
 @keyframes up{
     from{
         opacity: 0;
@@ -79,3 +79,52 @@ header > .links a.active{
         opacity: 1;
     }
 }
+
+/* --------- DETALHES --------- */
+
+.wrap > .card > .details {
+    padding: 32px;
+}
+
+.wrap > .card > .details > .item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 16px 0;
+}
+
+.wrap > .card > .details > .item:last-child {
+    border: none;
+}
+
+.wrap > .card > .details > h3 ,
+.wrap > .card > .details > .item > div:nth-child(1) {
+    font-size: 14px;
+    line-height: 24px;
+    color: #777;
+    letter-spacing: 0.7px;
+    font-weight: normal;
+}
+
+.wrap > .card > .details > .item > div:nth-child(2) {
+    color: #555;
+    font-weight:bold;
+    font-size: 18px;
+ }
+
+ .wrap > .card > .details > h3 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--primary-color);
+ }
+
+ .wrap > .card > .details > .item > div:nth-child(2) > span{
+    padding: 8px 16px;
+    background-color: yellow;
+    border-radius: 16px;
+    color: #777;
+    font-weight:bold;
+    font-size: 12px;
+    margin-top: 8px;
+    margin-right: 4px;
+    text-transform: uppercase;
+    display: inline-block;
+ }
