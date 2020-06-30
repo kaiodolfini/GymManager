@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
+    "git": "^0.1.5",
     "nunjucks": "^3.2.1"
   },
   "devDependencies": {
