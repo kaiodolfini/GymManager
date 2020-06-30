@@ -131,4 +131,29 @@ header > .links a.active{
 
  /* --------- FORM --------- */
 
- 
+ .wrap > .card > .details > .item > div:nth-child(2) > input{
+     width: 100%;
+     outline: none;
+     font-weight: bold;
+     font-size: 18px;
+ }
+
+ .wrap > .card > .details > .item > div:nth-child(2) > input[type="radio"]{
+     width: initial;
+     margin-right: 4px;
+ }
+
+ .wrap > .card > .details > .item > div:nth-child(2) > input::placeholder{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.wrap > .card > .details > button[type="submit"] {
+    padding: 8px 32px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 4px;
+    margin-top: 32px;
+    width: 100%;
+    font-size: 16px;
+}

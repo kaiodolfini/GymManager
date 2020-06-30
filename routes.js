@@ -1,4 +1,5 @@
 const express = require('express')
+const { restart } = require('nodemon')
 const routes = express.Router()
 
 routes.get('/', function(req, res) {
@@ -14,7 +15,17 @@ routes.get('/instructors/create', function(req, res) {
 })
 
 routes.post('/instructors', function(req, res) {
-    return res.send("RECEBIDO")
+
+    const keys = Object.keys(req.body)
+
+    for (key of keys){
+        if (req.body[key] == ""){
+            return res.send('Please, fill all fields!')
+        }
+    }
+
+    return res.send(req.body)
+
 })
 
 routes.get('/members', function(req, res) {
