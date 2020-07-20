@@ -1,1 +1,12 @@
-{"avatar-url":"http://google.com","name":"Kaio Dolfini","birth":"2020-07-23","gender":"M","services":"musculacao "}
+{
+  "instructors": [
+    {
+      "avatar-url": "http://google.com",
+      "name": "Kaio Dolfini",
+      "birth": 886032000000,
+      "gender": "M",
+      "services": "musculacao ",
+      "created_at": 1595267834249
+    }
+  ]
+}
