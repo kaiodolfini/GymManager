@@ -1,12 +1,12 @@
 {
   "instructors": [
     {
-      "avatar-url": "http://google.com",
+      "id": 1,
       "name": "Kaio Dolfini",
-      "birth": 886032000000,
+      "birth": 723513600000,
       "gender": "M",
       "services": "musculacao ",
-      "created_at": 1595267834249
+      "created_at": 1595334989752
     }
   ]
 }
