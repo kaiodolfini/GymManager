@@ -148,7 +148,7 @@ header > .links a.active{
     font-weight: normal;
 }
 
-.wrap > .card > .details > button[type="submit"] {
+.wrap > .card > .details > button[type="submit"], a.button {
     padding: 8px 32px;
     background-color: var(--primary-color);
     color: white;
@@ -156,4 +156,11 @@ header > .links a.active{
     margin-top: 32px;
     width: 100%;
     font-size: 16px;
+}
+
+.wrap > .card > .details > a.button {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
 }
